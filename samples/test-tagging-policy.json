@@ -1,0 +1,32 @@
+{
+    "tags": {
+      "fruit": {
+        "tag_key": {
+          "@@assign": "fruit"
+        },
+        "tag_value": {
+          "@@assign": [
+            "apple",
+            "orange"
+          ]
+        },
+        "enforced_for": {
+          "@@assign": [
+            "ec2:instance",
+            "ec2:volume"
+          ]
+        }
+      },
+      "Name": {
+        "tag_key": {
+          "@@assign": "Name"
+        },
+        "enforced_for": {
+          "@@assign": [
+            "ec2:instance",
+            "ec2:volume"
+          ]
+        }
+      }
+    }
+}
